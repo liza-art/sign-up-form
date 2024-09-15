@@ -6,11 +6,57 @@
     <link rel="stylesheet" href="/style.css" />
     <title>Sign up</title>
   </head>
+
   <body>
     <div class="wallpaper">
       <img src="/odin-lined.png" alt="" />
       <span>ODIN </span>
       <p class="overlay"></p>
+    </div>
+
+    <div class="text-container">
+      <div class="text">
+        <p>
+          This is not a real online service! This project is designed to
+          practice using forms.Sourse of the task <em>Odin Project</em>
+        </p>
+        <p>Chase your dreams!</p>
+      </div>
+    </div>
+    <div class="form-section">
+      <fieldset>
+        <h3>Let's do this!</h3>
+      <section class="left">
+        <p class="style-input">
+            <label for="name">FIRST NAME</label>
+            <input type="text" name="name" placeholder="Thor"/>
+          </p>
+          <p class="style-input">
+              <label for="mail">EMAIL</label>
+              <input type="email" name="mail">
+          </p>
+          <p class="style-input">
+            <label for="pwd">PASSWORD</label>
+            <input type="password" name="pwd">
+            <span id="error">This field is required*</span>
+          </p>
+      </section>
+      <section class="right">
+        <p class="style-input">
+            <label for="nameLast">LAST NAME</label>
+            <input type="text" name="nameLast">
+        </p>
+        <p class="style-input">
+            <label for="tel">TELEPHONE</label>
+            <input type="tel" name="tel" id="">
+        </p>
+        <p class="style-input">
+            <label for="pwd-conf">CONFIRM PASSWORD</label>
+            <input type="password" name="pwd-conf" id="" required>
+            <span id="error">This field is required*</span>
+        </p>
+      </section>
+      </fieldset>
     </div>
   </body>
 </html>

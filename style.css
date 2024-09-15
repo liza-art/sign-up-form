@@ -3,37 +3,111 @@
     src: url(/Norse-Bold.otf);
 }
 
-body{
+body {
     margin: 0;
 }
 
-span{
+span {
     font-family: "logo";
     color: white;
     font-size: 5em;
-    opacity: 1;
 }
 
-img{
-    height: 10vh;
-    width: 7vw;
+img {
+    height: 90px;
+    width: 60px;
 }
 
-.wallpaper{
+.wallpaper {
     background-image: url(/photo-1585202900225-6d3ac20a6962.avif);
-    height: 100vh;
+    height: 73vh;
     width: 40vw;
     display: flex;
     justify-content: center;
     padding-top: 27vh;
 }
 
-.overlay{
+.overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 20vh;
+    height: 19vh;
     width: 40vw;
-    position:absolute;
+    position: absolute;
     top: 140px;
     opacity: 0.5;
     
+
+}
+
+.text-container {
+  position: absolute;
+  left:40vw;
+  top: 0;
+  background-color: rgb(246, 248, 248);
+  padding-top: 9vh;
+  padding-left: 2vw;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding-bottom: 40px;
+}
+
+.form-section{
+    position: absolute;
+    top: 29vh;
+    left: 40vw;
+    width: 60vw;
+}
+
+
+.style-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+}
+
+fieldset{
+    display: flex;
+    gap: 50px;
+}
+
+.left,
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10vh;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    position: absolute;
+}
+
+input{
+    border-radius: 4px;
+    border: 1px lightgray solid;
+}
+
+input:focus{
+   border: 1px blue solid;
+   box-shadow: 0, 2px, 4px, 10px rgba(0, 0, 0, 0.5);
+   outline: none;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+#error{
+    display: none;
+    color: red;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:invalid ~ #error{
+    display: block;
 }
